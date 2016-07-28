@@ -1,6 +1,6 @@
 {
   "name": "meshblu-core-task-revoke-all-tokens",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Meshblu core task meshblu-core-task-revoke-all-tokens",
   "keywords": [
     "meshblu",
@@ -28,6 +28,7 @@
     "coffee-script": "^1.10.0",
     "istanbul": "^0.4.4",
     "meshblu-core-datastore": "^4.6.0",
+    "meshblu-core-manager-token": "^7.4.2",
     "mocha": "^2.5.3",
     "mocha-istanbul": "^0.3.0",
     "mongojs": "^2.4.0",
