@@ -42,6 +42,12 @@ describe 'RevokeAllTokens', ->
             metadata:
               tag: 'not-this-one'
           }
+          {
+            uuid: 'some-other-token'
+            hashedToken: 'T/GMBdFNOc9l3uagnYZSwgFfjtp8Vlf6ryltQUEUY1U='
+            metadata:
+              tag: 'not-this-one'
+          }
         ]
         @datastore.insert record, done
 
@@ -69,4 +75,10 @@ describe 'RevokeAllTokens', ->
         @datastore.find { uuid: 'thank-you-for-considering' }, (error, records) =>
           return done error if error?
           expect(records).to.be.empty
+          done()
+
+      it 'should not remove all the tokens in the system', (done) ->
+        @datastore.find { uuid: 'some-other-token' }, (error, records) =>
+          return done error if error?
+          expect(records).not.to.be.empty
           done()
