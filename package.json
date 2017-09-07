@@ -1,6 +1,6 @@
 {
   "name": "meshblu-core-task-revoke-all-tokens",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Meshblu core task meshblu-core-task-revoke-all-tokens",
   "keywords": [
     "meshblu",
@@ -26,26 +26,18 @@
     "test:watch": "mocha -w -R mocha-multi --reporter-options spec=-,mocha-osx-reporter=-"
   },
   "dependencies": {
-    "chai": "^3.5.0",
-    "coffee-coverage": "^1.0.1",
     "coffee-script": "^1.10.0",
-    "istanbul": "^0.4.4",
     "meshblu-core-datastore": "^4.6.0",
     "meshblu-core-manager-token": "^7.4.2",
-    "mocha": "^2.5.3",
-    "mocha-istanbul": "^0.3.0",
-    "mongojs": "^2.4.0",
-    "sinon": "^1.17.4",
-    "sinon-chai": "^2.8.0"
+    "mongojs": "^2.4.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "coffee-script": "^1.10.0",
-    "mocha": "^2.5.3",
-    "mocha-multi": "^0.9.1",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0",
+    "mocha-multi": "^0.11.0",
     "mocha-osx-reporter": "^0.1.2",
-    "nyc": "^8.3.0",
-    "sinon": "^1.17.5",
+    "nyc": "^11.2.1",
+    "sinon": "^3.2.1",
     "sinon-chai": "^2.8.0"
   },
   "peerDependencies": {},
